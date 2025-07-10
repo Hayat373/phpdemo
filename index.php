@@ -6,12 +6,18 @@
     <title>Demo</title>
 </head>
 <body>
+    <?php 
+    $name="Dark Matter";
+    $read=true;
 
+    if($read){
+        $message= "you have read  $name";
+    }
+    ?>
     <h1>
-        <?php
-        $greet ="Helo";
-        echo $greet. "world";
-         ?>
+  
+     <?= $message ?>
+        
     </h1>
     
 </body>
