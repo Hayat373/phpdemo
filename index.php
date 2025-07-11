@@ -7,16 +7,29 @@
 </head>
 <body>
     <?php 
-    $name="Dark Matter";
-    $read=true;
-
-    if($read){
-        $message= "you have read  $name";
-    }
+    $books= [
+       [
+        'name' => 'do haus ci d',
+        'url'=>'htttps/rtwhgsdbskjds'
+       ],
+        [
+        'name' => 'do haus ghji d',
+        'url'=>'htttps/rtwhgsdbskjds'
+       ]
+    ]
     ?>
     <h1>
   
-     <?= $message ?>
+   <ul>
+    <?php foreach($books as $book): ?>
+
+        <li>
+            <?=$book['name']; ?> 
+            <?=$book['url']; ?> 
+        </li>
+
+        <?php endforeach; ?>
+   </ul>
         
     </h1>
     
